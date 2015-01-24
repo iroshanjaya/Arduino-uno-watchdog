@@ -19,9 +19,11 @@ void loop () {
           //keep in the while loop. this clear watchdog timer. if delay()>WDT_xS, then MSU reset. or if MCU stuck
           //then WDT timer will reset MSU after WDTO_xS. because it will not reach wdt_reset() command.            
  
- Serial.println ("Entered while ...");
+          Serial.println ("Entered while ...");
  
- delay(2000);
+           delay(2000);
 
-}   // oops, went into a loop
+      }   // oops, went into a while loop
+
+ 
 } // end of loop
